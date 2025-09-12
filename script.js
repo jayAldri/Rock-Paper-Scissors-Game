@@ -71,10 +71,12 @@
       document.querySelector('.js-result').innerHTML = result;
       // document.querySelector('.js-moves').innerHTML = `You <img src="images/${playerMove.toLowerCase()}-emoji.png" class="move-ico">
       // - Computer Pick <img src="images/${computerMove.toLocaleLowerCase()}-emoji.png" class="move-ico">`;
-      document.querySelector('.js-moves').innerHTML = `
-      You <img src="images/${playerMove.charAt(0).toUpperCase() + playerMove.slice(1)}-emoji.png" class="move-ico">
-      - Computer Pick <img src="images/${computerMove.charAt(0).toUpperCase() + computerMove.slice(1)}-emoji.png" class="move-ico">
-    `;
+    //   document.querySelector('.js-moves').innerHTML = `
+    //   You <img src="images/${playerMove.charAt(0).toUpperCase() + playerMove.slice(1)}-emoji.png" class="move-ico">
+    //   - Computer Pick <img src="images/${computerMove.charAt(0).toUpperCase() + computerMove.slice(1)}-emoji.png" class="move-ico">
+    // `;
+      document.querySelector('.js-moves').innerHTML = `You <img src="images/${playerMove.toLowerCase()}-emoji.png" class="move-ico">
+      - Computer Pick <img src="images/${computerMove.toLowerCase()}-emoji.png" class="move-ico">`;
     }
 
 
